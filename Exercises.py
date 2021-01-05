@@ -186,12 +186,213 @@ from random import randint, choice
 
 # Exercise ##
 
-rand_num = randint(1, 10)
-iterations = 0
+# rand_num = randint(1, 10)
+# iterations = 0
+#
+# while rand_num != 5:
+#     rand_num = randint(1, 10)
+#     print(rand_num)
+#     iterations += 1
+#
+# print(f"Took {iterations} iterations to find 5")
 
-while rand_num != 5:
-    rand_num = randint(1, 10)
-    print(rand_num)
-    iterations += 1
+# Exercise 16
+#
+# people = ["Hanna","Louisa","Claudia", "Angela","Geoffrey", "aparna"]
+#
+# people[0] = "Hannah"
+# people[-2] = "Jeffery"
+# people[-1] = "Aparna"
+#
+# print(people)
 
-print(f"Took {iterations} iterations to find 5")
+# # Exercise 17
+#
+# sounds = ["super", "cali", "fragil", "istic", "expi", "ali", "docious"]
+#
+# final = ""
+#
+# for sound in sounds:
+#     final += sound.upper()
+#
+# print(final)
+
+# Exercise 19
+# Indexes always start at 0
+#
+# instructors = []
+#
+# instructors.append("Colt")
+# instructors.append("Blue")
+# instructors.append("Lisa")
+#
+# instructors.pop()
+# instructors.pop(0)
+#
+# instructors.insert(0, "Done")
+#
+# print(instructors)
+
+# Exercise 20
+
+# names = ["Ellie", "Tim", "Matt"]
+#
+# first_letter = [name[0] for name in names]
+#
+# print(first_letter)
+#
+# numbers = [1, 2, 3, 4, 5, 6]
+#
+# even_numbers = [num for num in numbers if num % 2 == 0]
+#
+# print(even_numbers)
+
+# Exercise 21
+
+# nums1 = [1, 2, 3, 4]
+# nums2 = [3, 4, 5, 6]
+#
+# # Get every num in nums1 if that num is in nums2
+# intersection = [num for num in nums1 if num in nums2]
+#
+# print(intersection)
+#
+# names = ["Elie", "Tim", "Matt"]
+#
+# # Slice [::-1] is a quick and easy way to reverse a string
+#
+# names_modified = [name[::-1].lower() for name in names]
+#
+# print(names_modified)
+#
+# my_name = "Orlando"
+#
+# print(my_name[::-1])
+
+# Exercise 22
+
+# div_by_12 = [num for num in range(1, 101) if num % 12 == 0]
+#
+# print(div_by_12)
+#
+# # print([num for num in range(1, 101)])
+
+# Exercise 23
+
+# string = "amazing"
+#
+# # Need to make sure to include that conditional
+# non_vowels = [char for char in string if char not in "aeiou"]
+#
+# print(non_vowels)
+
+# Exercise 24
+
+# Maybe do a better job at naming your variables
+# list1 = [[num for num in range(0, 3)] for num in range(0, 3)]
+#
+# print(list1)
+
+# Exercise 25
+
+# ten_by_ten = [[inner for inner in range(0, 10)] for outer in range(0, 10)]
+#
+# print(ten_by_ten)
+#
+
+# Exercise 26
+#
+# artist = {
+#     "first": "Neil",
+#     "last": "Young"
+# }
+# # Can be accomplished with an f string
+# full_name_fstring = f"{artist['first']} {artist['last']}"
+#
+# full_name = artist["first"] + " " + artist["last"]
+#
+#
+# print(full_name)
+# print(full_name_fstring)
+
+# Exercise 27
+
+# donations = dict(sam=25.0, lena=88.99, chuck=13.0, linus=99.5, stan=150.0, lisa=50.25, harrison=10.0)
+#
+# total_donations = 0
+# for amounts in donations.values():
+#     total_donations += amounts
+#
+# print(total_donations)
+
+# Exercise 28
+#
+# food = choice(["cheese pizza", "quiche","morning bun","gummy bear","tea cake"])
+#
+# bakery_stock = {
+#     "almond croissant" : 12,
+#     "toffee cookie": 3,
+#     "morning bun": 1,
+#     "chocolate chunk cookie": 9,
+#     "tea cake": 25
+# }
+#
+# print(food)
+#
+# if food in bakery_stock:
+#     print(f"{bakery_stock[food]} {food} left")
+# else:
+#     print("We dont make that")
+
+# Exercise 29
+
+# game_properties = ["current_score", "high_score", "number_of_lives", "items_in_inventory", "power_ups", "ammo", "enemies_on_screen", "enemy_kills", "enemy_kill_streaks", "minutes_played", "notifications", "achievements"]
+#
+# init_game_state = {}.fromkeys(game_properties, 0)
+#
+# print(init_game_state)
+
+# Exercise 30
+
+inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1}
+
+stock_list = inventory.copy()
+
+print(stock_list)
+
+# stock_list["cookie"] = 18
+stock_list.update({"cookie": 18})
+
+print(stock_list)
+
+stock_list.pop("cake")
+
+print(stock_list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
