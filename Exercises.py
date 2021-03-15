@@ -354,25 +354,88 @@ from random import randint, choice
 
 # Exercise 30
 
-inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1}
+# inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1}
+#
+# stock_list = inventory.copy()
+#
+# print(stock_list)
+#
+# # stock_list["cookie"] = 18
+# stock_list.update({"cookie": 18})
+#
+# print(stock_list)
+#
+# stock_list.pop("cake")
+#
+# print(stock_list)
 
-stock_list = inventory.copy()
+# Exercise 32
+#
+# list1 = ["CA", "NJ", "RI"]
+# list2 = ["California", "New Jersey", "Rhode Island"]
+#
+# # Regular
+# state_abbrev1 = {list1[i]: list2[i] for i in range(0, len(list1))}
+#
+# print(state_abbrev1)
+#
+# # Using Zip method
+#
+# state_abbrev2 = {k: v for k, v in zip(list1, list2)}
+#
+# # Official way
+# state_abbrev2 = dict(zip(list1, list2))
+#
+# # Dict can be made with a tuple
+# # Zip method will give us tuples from the two lists we pass in
+# dict()
+#
+# print(state_abbrev2)
 
-print(stock_list)
+# Exercise 33
 
-# stock_list["cookie"] = 18
-stock_list.update({"cookie": 18})
+# person = [["name", "Jared"], ["job", "Musician"], ["city", "Bern"]]
+#
+# person_dict = {item[0]: item[1] for item in person}
+#
+# print(person_dict)
+#
+# # Can also be done with k, v and dict
+# # List of pairs can be turned into a dict using dict method
+# dict(person)
 
-print(stock_list)
+# Exercise 34
 
-stock_list.pop("cake")
+# vowels = {}.fromkeys("aeiou", 0)
+#
+# print(vowels)
 
-print(stock_list)
+# Exercise 35
 
+# ascii_dict = {val: chr(val) for val in range(65, 91)}
+#
+# print(ascii_dict)
 
+# Exercise 36
 
+numbers = (1, 2, 3, 4)
+print(numbers)
 
+# value =
+# (1, )
+value = (1, )
+print(value)
 
+values = [10, 20, 30]
+print(values)
+
+static_values = tuple(values)
+print(static_values)
+
+stuff = [1, 3, 1, 5, 2, 5, 1, 2, 5]
+
+unique_stuff = set(stuff)
+print(unique_stuff)
 
 
 
