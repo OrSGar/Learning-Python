@@ -6,6 +6,6 @@ user_color = input("What color? ").upper()
 print(user_color)
 
 if user_color in COLOR_CODES:
-    print_figlet(user_str, font="isometric1", colors=user_color)
+    print_figlet(user_str, font="slant", colors=user_color)
 else:
-    print_figlet(user_str, font="isometric1", colors="MAGENTA")
+    print_figlet(user_str, font="slant", colors="MAGENTA")
