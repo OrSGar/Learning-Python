@@ -38,7 +38,7 @@ elif len(topic_jokes) == 1:
     print(f"Ive got one joke about {user_topic}. Here it is:")
     print(choice(topic_jokes)["joke"])
 else:
-    print(f"Ive got {len(topic_jokes)} joke about {user_topic}. Here it is:")
+    print(f"Ive got {len(topic_jokes)} jokes about {user_topic}. Here it is:")
     print(choice(topic_jokes)["joke"])
 
 
