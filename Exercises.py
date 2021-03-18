@@ -418,26 +418,28 @@ from random import randint, choice
 
 # Exercise 36
 
-numbers = (1, 2, 3, 4)
-print(numbers)
+# numbers = (1, 2, 3, 4)
+# print(numbers)
+#
+# # value =
+# # (1, )
+# value = (1, )
+# print(value)
+#
+# values = [10, 20, 30]
+# print(values)
+#
+# static_values = tuple(values)
+# print(static_values)
+#
+# stuff = [1, 3, 1, 5, 2, 5, 1, 2, 5]
+#
+# unique_stuff = set(stuff)
+# print(unique_stuff)
 
-# value =
-# (1, )
-value = (1, )
-print(value)
+str = "Orlando"
 
-values = [10, 20, 30]
-print(values)
-
-static_values = tuple(values)
-print(static_values)
-
-stuff = [1, 3, 1, 5, 2, 5, 1, 2, 5]
-
-unique_stuff = set(stuff)
-print(unique_stuff)
-
-
+print(str[::-1])
 
 
 
