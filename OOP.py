@@ -242,3 +242,164 @@
 # #
 # # print(new_list)
 
+# Exercise 89
+from functools import wraps
+
+#
+# # In Colts code he returns the result of the function
+# def show_args(fn):
+#     @wraps(fn)
+#     def wrapper(*args, **kwargs):
+#         print(args)
+#         fn()
+#         # return fn(*args, **kwargs)
+#         print(kwargs)
+#     ## Dont forget to return the method you created
+#     return wrapper
+#
+#
+# @show_args
+# def my_function():
+#     print(":(")
+#
+# my_function(1, 2, 3, a="yeah")
+
+# Exercise 90
+#
+# def double_return(fn):
+#     @wraps(fn)
+#     def wrapper(*args, **kwargs):
+#         # Over engineering?
+#         # Colt just returns the list twice, I suppose in this case i ran the function twice for no reason
+#         return [fn(*args) for _ in range(0, 2)]
+#
+#     return wrapper
+#
+#
+# @double_return
+# def add(x, y):
+#     return x + y
+#
+#
+# @double_return
+# def greet(name):
+#     return f"Hi, I'm {name}"
+#
+#
+# print(add(1, 2))
+# print(greet("Orlando"))
+
+# Exercise 91
+
+# def ensure_fewer_than_three_args(fn):
+#     @wraps(fn)
+#     def wrapper(*args, **kwargs):
+#         if len(args) > 3:
+#             raise ValueError("Too many arguements!!")
+#         return fn(*args, **kwargs)
+#
+#     return wrapper
+#
+#
+# @ensure_fewer_than_three_args
+# def add_all(*args):
+#     return sum(args)
+#
+#
+# print(add_all(1, 2))
+# print(add_all(1, 2, 3))
+# add_all(1, 2, 3, 4)
+#
+# def only_ints(fn):
+#     @wraps(fn)
+#     def wrapper(*args, **kwargs):
+#         for param in args:
+#             if not isinstance(param, int):
+#                 raise ValueError("Please use ints only")
+#
+#         return fn(*args, **kwargs)
+#
+#     return wrapper
+# # Colts Solution
+# def only_ints_2(fn):
+#     @wraps(fn)
+#     def wrapper(*args, **kwargs):
+#         # any returns false if any thing that is in the iterable is false
+#         # Will return 0 or 1
+#         # We will populate the list of any of the elements are not integers
+#         # Then with any we check and see if there are any elements in the list
+#         # If there are elements in the list, that means there are args that are not ints
+#         # Therefore we will tell the user to only use ints please
+#         if any([arg for arg in args if type(arg) != int]):
+#             print(any([arg for arg in args if type(arg) != int]))
+#             return "Please use ints only"
+#
+#         return fn(*args, **kwargs)
+#
+#     return wrapper
+#
+#
+# @only_ints_2
+# def add(x, y):
+#     return x + y
+#
+#
+# print(add(1, 2))
+# print(add("2", "1"))
+# Exercise 93
+# Dont forget to return
+# def ensure_authorized(fn):
+#     @wraps(fn)
+#     def wrapper(*args, **kwargs):
+#         if kwargs.get('role') == "admin":
+#             return fn(*args, **kwargs)
+#         else:
+#             return "Unauthorized"
+#
+#     return wrapper
+#
+#
+# @ensure_authorized
+# def show_secrets(*args, **kwargs):
+#     return "shshshshshsh"
+#
+#
+# print(show_secrets(1))
+# # print(show_secrets(role="admin"))
+# from time import sleep
+#
+#
+# def delay(val):
+#     def inner(fn):
+#         print(f"Waiting {val} seconds until the function runs")
+#         sleep(val)
+#
+#         @wraps(fn)
+#         def wrapper(*args, **kwargs):
+#             return fn(*args, **kwargs)
+#
+#         return wrapper
+#
+#     return inner
+#
+#
+# # Colts version
+# def delay_2(val):
+#     def inner(fn):
+#         @wraps(fn)
+#         def wrapper(*args, **kwargs):
+#             print(f"Waiting {val} seconds until the function runs")
+#             sleep(val)
+#             return fn(*args, **kwargs)
+#
+#         return wrapper
+#
+#     return inner
+#
+#
+# @delay(3)
+# def say_hi():
+#     return "hi"
+#
+#
+# print(say_hi())
