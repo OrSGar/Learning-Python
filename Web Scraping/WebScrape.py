@@ -19,7 +19,6 @@ with open("blog_data.csv", "w") as source:
 # For every article tag, lets get its title
 # Find gets us the first anchor tag of each article, in our case the first anchor tag is the one we want
 # We are doing this logic for every article tag in the website
-
 with open("blog_data.csv", "a") as source:
     headers = ("Title", "Link", "Date")
     dict_writer = DictWriter(source, fieldnames=headers)

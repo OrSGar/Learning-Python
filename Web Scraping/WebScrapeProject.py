@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-
+# Go to the next page of quotes
 def get_next_page(url, soup):
     next_page = soup.find("nav").find("li", class_="next")
 
@@ -30,6 +30,4 @@ while quote_website:
     quote_website = get_next_page(quote_website, soup)
 
 for quote in quote_data:
-    print()
-    print(quote)
-    print()
+    print('\n' + str(quote) + '\n')
