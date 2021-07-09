@@ -1,4 +1,4 @@
-import FunctionExercises as funcex
+import Functions as funcex
 # Exercise 29
 print(funcex.generate_evens())
 
