@@ -60,7 +60,10 @@ Here is a description of each of the directories and their files:
 
 ## Acknowledgements 
 
-Special thanks to [othneildrew](https://github.com/othneildrew) and his README [template](https://github.com/othneildrew/Best-README-Template). 
+Special thanks to:
+
+[othneildrew](https://github.com/othneildrew) and his README [template](https://github.com/othneildrew/Best-README-Template).
+
 Colts Udemy [course.](https://www.udemy.com/course/the-modern-python3-bootcamp/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
