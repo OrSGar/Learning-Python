@@ -1,4 +1,7 @@
 from random import randint
+
+""" Simple CP guessing game - user attempts to guess number stored in memory until the number matches"""
+
 # code can be completed in a single while loop that runs forever
 # In the while loop, after the exit case has been reached, we can ask to play again
 # New number is generated if the case is yes

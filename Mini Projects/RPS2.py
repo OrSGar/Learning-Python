@@ -1,5 +1,7 @@
 from random import choice
 
+""" Rock paper scissors extended to use CP """
+
 print("Rock Paper Scissors Game\n\n")
 
 rock_paper_scissors = ["rock", "paper", "scissors"]

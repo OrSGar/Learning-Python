@@ -1,5 +1,7 @@
 from pyfiglet import print_figlet, COLOR_CODES
 
+""" Prints a user supplied message formatted in a figlet format """
+
 user_str = input("What message do you want to print? ")
 user_color = input("What color? ").upper()
 

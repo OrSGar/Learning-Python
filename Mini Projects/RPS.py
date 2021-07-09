@@ -1,3 +1,5 @@
+""" First version of rock paper scissors logic between two players"""
+
 print("Rock Paper Scissors Game\n\n")
 
 p1_choice = input("Enter Player 1's choice: ")
