@@ -40,7 +40,7 @@ Brief description of each of the directories and their files:
 1. [Exercises](https://github.com/OrSGar/Learning-Python/tree/master/Exercises) - General coding exercises 
    * [Exercises.py](https://github.com/OrSGar/Learning-Python/blob/master/Exercises/Exercises.py) - Syntax, variables, data structures
    * [FuncTesting.py](https://github.com/OrSGar/Learning-Python/blob/master/Exercises/FuncTesting.py) - File for running functions from `Functions.py`
-   * [FunctionExercises.py](https://github.com/OrSGar/Learning-Python/blob/master/Exercises/FunctionExercises.py) - Functions, documentation practice
+   * [Functions.py](https://github.com/OrSGar/Learning-Python/blob/master/Exercises/Functions.py) - Functions, documentation practice
    * [HTTPExercises.py](https://github.com/OrSGar/Learning-Python/blob/master/Exercises/HTTPExercises.py) - Small HTTP request demo 
 2. [FileIO](https://github.com/OrSGar/Learning-Python/tree/master/FileIO) - FileIO (txt, csv) related exercises
    * [CSVExercises.py](https://github.com/OrSGar/Learning-Python/blob/master/FileIO/CSVExercises.py) - CSV manipulation functions 
