@@ -20,7 +20,7 @@
 <br />
 <p align="center">
     <a href="https://www.python.org">
-        <img src="README_Resources/Python_Logo.png" alt="Logo" width="180" height="90">
+        <img src="README_Resources/Python_Logo.png" alt="Logo">
     </a>
 
 <h3 align="center">Learning Python</h3>
