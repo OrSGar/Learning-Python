@@ -31,11 +31,11 @@
 
 
 <!-- ABOUT THE PROJECT -->
-### About the Repo
+## About the Repo
 
 This repo contains the code I used when following along with this [Udemy course.](https://www.udemy.com/course/the-modern-python3-bootcamp/)
 
-Here is a description of each of the directories and their files:
+Brief description of each of the directories and their files:
 
 1. [Exercises](https://github.com/OrSGar/Learning-Python/tree/master/Exercises) - General coding exercises 
    * [Exercises.py](https://github.com/OrSGar/Learning-Python/blob/master/Exercises/Exercises.py) - Syntax, variables, data structures
